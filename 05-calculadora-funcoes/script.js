@@ -1,29 +1,21 @@
-/*
-  EXERCÍCIO 05 — CALCULADORA UTILIZANDO FUNÇÕES
-*/
-
-function somar(a, b) {
-  // TODO
+function soma(a, b) {
+    return a + b
 }
 
-function subtrair(a, b) {
-  // TODO
+function subtracao(a, b) {
+    return a - b
 }
 
-function multiplicar(a, b) {
-  // TODO
+function multiplicacao(a, b) {
+    return a * b
 }
 
-function dividir(a, b) {
-  // TODO:
-  // Trate divisão por zero.
+function divisao(a, b) {
+    return (a / b) 
 }
 
-function calcular(a, b, operacao) {
-  // TODO:
-  // Escolha a função correta conforme a operação.
-  // Trate também uma operação desconhecida.
+function calcular(a,b, operacao) {
+    return operacao(a,b)
 }
 
-// TODO:
-// Faça alguns testes com calcular().
+console.log(calcular(10, 5, divisao))

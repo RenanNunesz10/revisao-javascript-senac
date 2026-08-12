@@ -1,23 +1,21 @@
-/*
-  EXERCÍCIO 02 — CALCULADORA DE MÉDIA
-*/
+const nome = "Renan"
+let nota1 = 8
+let nota2 = 7
+let nota3 = 9
+let nota4 = 6
 
-const nomeAluno = "Aluno Exemplo";
+let media = (nota1 + nota2 + nota3 + nota4) / 4
 
-// TODO:
-// Crie quatro variáveis/constantes para armazenar as notas.
+if (media >= 7) {
+    status = "Aprovado"
+} else {
+    status = "Reprovado"
+}
 
-// TODO:
-// Calcule a soma das quatro notas.
-
-// TODO:
-// Calcule a média aritmética.
-
-// TODO:
-// Exiba no console:
-// Nome do aluno
-// Notas
-// Média final
-
-// DESAFIO:
-// Formate a média com duas casas decimais.
+console.log(
+    `- Nome: ${nome} \n
+    - nota1: ${nota1} \n
+    - nota2: ${nota2} \n
+    - nota3: ${nota3} \n
+    - nota4: ${nota4} \n
+    - Média: ${media}`)

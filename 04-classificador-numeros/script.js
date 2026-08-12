@@ -1,17 +1,12 @@
-/*
-  EXERCÍCIO 04 — CLASSIFICADOR DE NÚMEROS
-*/
-
 function classificarNumero(numero) {
-  // TODO:
-  // Descubra se o número é positivo, negativo ou zero.
+    if (numero === 0) {
+        return "Este número é zero";
+    }
+    
+    const sinal = numero > 0 ? "Positivo" : "Negativo";
+    const tipo = numero % 2 === 0 ? "Par" : "Ímpar";
 
-  // TODO:
-  // Quando o número não for zero, descubra também se ele é par ou ímpar.
-
-  // TODO:
-  // Retorne uma mensagem com a classificação.
+    return `O número ${numero} é ${sinal} e ${tipo}.`;
 }
 
-// TODO:
-// Teste a função com pelo menos cinco valores diferentes.
+console.log(classificarNumero(-5));
