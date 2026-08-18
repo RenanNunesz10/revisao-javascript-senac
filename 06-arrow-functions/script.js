@@ -5,19 +5,13 @@
 // TODO:
 // Reescreva as funções abaixo utilizando arrow functions.
 
-function somar(a, b) {
-  return a + b;
-}
+const somar = (a, b) => a + b;
 
-function subtrair(a, b) {
-  return a - b;
-}
+const subtrair = (a, b) => a - b;
 
-function multiplicar(a, b) {
-  return a * b;
-}
+const multiplicar = (a, b) => a * b;
 
-function dividir(a, b) {
+const dividir = (a, b) => {
   if (b === 0) {
     return "Não é possível dividir por zero";
   }
@@ -31,16 +25,17 @@ function dividir(a, b) {
 // TODO:
 // Crie uma arrow function calcular() mantendo o comportamento do exercício anterior.
 const calcular = (a, b, operacao) => {
-  switch (operacao) {
-    case "somar":
-      return somar(a, b);
-    case "subtrair":
-      return subtrair(a, b);
-    case "multiplicar":
-      return multiplicar(a, b);
-    case "dividir":
-      return dividir(a, b);
-    default:
-      return "Operação inválida";
+  if (operacao === "somar") {
+    return somar(a, b);
   }
+  if (operacao === "subtrair") {
+    return subtrair(a, b);
+  }
+  if (operacao === "multiplicar") {
+    return multiplicar(a, b);
+  }
+  if (operacao === "dividir") {
+    return dividir(a, b);
+  }
+  return "Operação inválida";
 }
