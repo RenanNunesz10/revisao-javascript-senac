@@ -30,3 +30,17 @@ function dividir(a, b) {
 
 // TODO:
 // Crie uma arrow function calcular() mantendo o comportamento do exercício anterior.
+const calcular = (a, b, operacao) => {
+  switch (operacao) {
+    case "somar":
+      return somar(a, b);
+    case "subtrair":
+      return subtrair(a, b);
+    case "multiplicar":
+      return multiplicar(a, b);
+    case "dividir":
+      return dividir(a, b);
+    default:
+      return "Operação inválida";
+  }
+}
