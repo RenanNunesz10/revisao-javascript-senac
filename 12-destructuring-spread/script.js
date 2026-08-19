@@ -13,8 +13,15 @@ const aluno = {
 // TODO:
 // Extraia nome, curso e notas utilizando destructuring.
 
+const { nome, curso, notas } = aluno;
+
 // TODO:
 // Calcule a média das notas.
+console.log(notas)
+
+const media = notas.reduce((soma, nota) => soma + nota, 0) / notas.length;
+
+console.log(media)
 
 // TODO:
 // Crie um NOVO objeto chamado alunoAtualizado usando spread.
@@ -24,8 +31,18 @@ const aluno = {
 // - adicionar a propriedade media;
 // - alterar a situacao.
 
+const alunoAtualizado = {
+  ...aluno,
+  media: media,
+  situacao: media >= 6 ? "Aprovado" : "Reprovado"
+}
+
 // IMPORTANTE:
 // Não modifique o objeto aluno diretamente.
 
 // TODO:
 // Exiba os dois objetos para comparação.
+
+console.log (JSON.stringify(aluno, null, 2))
+
+console.log (JSON.stringify(alunoAtualizado, null, 2))
